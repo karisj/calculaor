@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+   <html>
+      <head>
+         <title>A calulator</title>
+        </head>
+      <body>
+       <form>
+          <input type="text" value="num1"  placeholder="number 1">
+          <input type="text" value="num2"  placeholder="number 2">
+             <select>
+                <option>Add</option>
+                <option>Subtract</option>
+                <option>Divide</option>
+                <option>Muliply</option>
+             </select>
+             <button type="submit" value="submit">Calculate</button>
+           <p>the answer  is:</p>
+           <?php
+              if(isset($_GET[submit])){
+             $_result1 =$_GET['num 1'];
+             $_result2 =$_GET['num 2'];
+             $_operator =$_GET['operator'];
+              switch(operator){
+              case "Add": 
+                echo "$_result1+$_result2";
+                break;
+              case "Subtract": 
+                echo "$_result1-$_result2";
+                break;
+              case "Divide": 
+                echo "$_result1/$_result2";
+                break;
+              case "Multiply": 
+                echo "$_result1*$_result2";
+                break;
+                }
+              
+         }
+                
+                 
+             
